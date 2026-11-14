@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c766e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="static/manifest.webmanifest">
+  <link rel="icon" href="static/icons/icon-192.png" type="image/png">
+  <meta name="description" content="MedSetu helps compare medicine information and potential costs. Always confirm changes with a qualified professional.">
+  <title>MedSetu — Medicine Cost Companion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" data-page="home" aria-label="MedSetu home">
+        <span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5v22M5 16h22" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><circle cx="16" cy="16" r="13" fill="none" stroke="currentColor" stroke-width="2"/></svg></span>
+        <span><strong>MedSetu</strong><small>Care that costs less</small></span>
+      </a>
+      <div class="side-label">WORKSPACE</div>
+      <nav class="nav-list" aria-label="Main navigation">
+        <button class="nav-item active" data-page="home"><span class="nav-icon">⌂</span><span>Overview</span></button>
+        <button class="nav-item" data-page="search"><span class="nav-icon">⌕</span><span>Compare medicine</span></button>
+        <button class="nav-item" data-page="my-medicines"><span class="nav-icon">▤</span><span>My medicines</span><span class="nav-count" id="medicine-count">0</span></button>
+        <button class="nav-item" data-page="kendra"><span class="nav-icon">⌖</span><span>Find a Kendra</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><div class="help-icon">♡</div><strong>Your health comes first</strong><p>MedSetu informs. It never prescribes.</p><button data-page="safety" class="text-link">Read safety guide <span>↗</span></button></div>
+        <div class="profile"><div class="avatar">M</div><div><strong>My workspace</strong><small>Personal use</small></div><span class="profile-dots">•••</span></div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Open navigation">☰</button>
+        <div class="breadcrumb"><span>Workspace</span><span class="crumb-sep">/</span><strong id="page-crumb">Overview</strong></div>
+        <div class="top-actions"><span class="privacy-pill"><span class="privacy-dot"></span> Privacy-minded</span><button class="icon-button" id="safety-top" aria-label="Safety information">ⓘ</button></div>
+      </header>
+
+      <section class="page active" id="page-home">
+        <div class="welcome-row">
+          <div><div class="eyebrow"><span class="eyebrow-line"></span> YOUR MEDICINE COMPANION</div><h1>Good care. <span>Clearer costs.</span></h1><p class="lead">Understand medicine information and explore potential savings—with safety always first.</p></div>
+          <div class="welcome-art" aria-hidden="true"><div class="art-circle"><span>✚</span></div><div class="art-pill pill-one"></div><div class="art-pill pill-two"></div><div class="art-spark">✦</div></div>
+        </div>
+
+        <div class="search-panel">
+          <div class="panel-heading"><div class="heading-icon">⌕</div><div><h2>Compare a medicine</h2><p>Start with the brand name printed on your strip or prescription.</p></div></div>
+          <form id="search-form" class="search-form">
+            <label class="sr-only" for="medicine-query">Medicine name</label>
+            <div class="search-input-wrap"><span class="input-search-icon">⌕</span><input id="medicine-query" name="medicine" autocomplete="off" placeholder="e.g. Dolo 650, Thyronorm 100 mcg" required><button type="button" class="clear-input" id="clear-query" aria-label="Clear search">×</button></div>
+            <button class="btn btn-primary" type="submit"><span>Compare medicine</span><span aria-hidden="true">→</span></button>
+          </form>
+          <div class="search-foot"><span>↳</span> Search by brand, generic name, strength or composition.</div>
+          <div class="quick-search"><span>Try a sample</span><button type="button" class="chip" data-query="Dolo 650">Dolo 650</button><button type="button" class="chip" data-query="Thyronorm 100 mcg">Thyronorm 100 mcg</button><button type="button" class="chip" data-query="Augmentin 625">Augmentin 625</button></div>
+        </div>
+
+        <div class="section-heading"><div><h2>What would you like to do?</h2><p>Simple tools to help you make an informed conversation with your pharmacist.</p></div></div>
+        <div class="action-grid">
+          <button class="action-card" data-page="search"><span class="action-icon teal">⌕</span><span class="action-copy"><strong>Compare costs</strong><small>Explore listed prices and possible alternatives.</small></span><span class="action-arrow">↗</span></button>
+          <button class="action-card" data-page="search" data-focus-upload="true"><span class="action-icon lilac">▧</span><span class="action-copy"><strong>Read a prescription</strong><small>Upload a photo for text extraction, if available.</small></span><span class="action-arrow">↗</span></button>
+          <button class="action-card" data-page="my-medicines"><span class="action-icon peach">▤</span><span class="action-copy"><strong>My medicines</strong><small>Keep a personal list on this device.</small></span><span class="action-arrow">↗</span></button>
+          <button class="action-card" data-page="kendra"><span class="action-icon blue">⌖</span><span class="action-copy"><strong>Find a Jan Aushadhi Kendra</strong><small>Look for a nearby store and check stock first.</small></span><span class="action-arrow">↗</span></button>
+        </div>
+
+        <div class="bottom-grid">
+          <div class="info-card savings-card"><div class="info-card-top"><span class="mini-icon green">↗</span><span class="tag">YOUR TRACKER</span></div><h3>Small comparisons add up.</h3><p>Save medicines to your list and enter prices to estimate potential savings. Estimates are not guaranteed.</p><div class="savings-total"><span id="home-savings">₹0</span><small>estimated savings tracked</small></div><button class="text-link" data-page="my-medicines">Open my medicines <span>→</span></button></div>
+          <div class="info-card safety-card"><div class="safety-card-icon">✚</div><div><span class="tag">SAFETY FIRST</span><h3>A lower price isn't the only factor.</h3><p>Strength, dosage form, ingredients and your medical situation matter. Never change a medicine based only on an app result.</p><button class="text-link" data-page="safety">How MedSetu handles safety <span>→</span></button></div></div>
+        </div>
+        <div class="disclaimer"><span class="disclaimer-symbol">ⓘ</span><p><strong>Important:</strong> MedSetu is an information and cost-comparison aid, not a diagnosis or prescription service. Confirm every proposed substitution with your doctor or pharmacist before making a change.</p></div>
+      </section>
+
+      <section class="page" id="page-search">
+        <div class="page-title"><div class="eyebrow"><span class="eyebrow-line"></span> MEDICINE LOOKUP</div><h1>Compare <span>with confidence.</span></h1><p class="lead">Review available medicine details and price information in one place.</p></div>
+        <div class="search-panel compact-panel">
+          <form id="search-form-secondary" class="search-form"><label class="sr-only" for="medicine-query-secondary">Medicine name</label><div class="search-input-wrap"><span class="input-search-icon">⌕</span><input id="medicine-query-secondary" placeholder="Enter brand or generic name" required><button type="button" class="clear-input" data-clear="medicine-query-secondary" aria-label="Clear search">×</button></div><button class="btn btn-primary" type="submit">Search <span>→</span></button></form>
+          <div class="upload-divider"><span>OR</span></div>
+          <div class="upload-row"><div class="upload-icon">▧</div><div class="upload-text"><strong>Use a prescription or medicine-strip photo</strong><small>JPG, PNG or WEBP · Check extracted text before using it.</small></div><label class="btn btn-outline upload-btn" for="prescription-file">Choose photo</label><input class="sr-only" id="prescription-file" type="file" accept="image/png,image/jpeg,image/webp"><button class="btn btn-quiet" id="clear-file" type="button" hidden>Remove</button></div>
+          <div class="file-preview" id="file-preview" hidden></div>
+        </div>
+        <div id="search-state" class="empty-state"><div class="empty-illustration"><span>⌕</span><i>✦</i></div><h2>Your results will appear here</h2><p>Search a medicine name to see the available information, potential price differences and safety notes.</p><div class="sample-row"><button class="chip" data-query="Dolo 650">Try Dolo 650</button><button class="chip" data-query="Augmentin 625">Try Augmentin 625</button></div></div>
+        <div id="result-panel" hidden></div>
+        <div class="disclaimer"><span class="disclaimer-symbol">ⓘ</span><p><strong>Remember:</strong> A similar name does not prove equivalence. Confirm the exact active ingredients, strength, dosage form and suitability with a qualified professional.</p></div>
+      </section>
+
+      <section class="page" id="page-my-medicines">
+        <div class="page-title page-title-row"><div><div class="eyebrow"><span class="eyebrow-line"></span> PERSONAL LIST</div><h1>My <span>medicines.</span></h1><p class="lead">Keep track of medicines you choose to save on this device.</p></div><button class="btn btn-primary" id="add-manual-medicine">＋ Add medicine</button></div>
+        <div class="privacy-note"><span>♧</span><div><strong>Stored on this device</strong><p>Your list uses this browser's local storage. It is not a secure medical record. Avoid using a shared device.</p></div></div>
+        <div class="list-toolbar"><div><strong id="list-count-title">Saved medicines</strong><span id="list-subtitle">0 items</span></div><button class="btn btn-quiet" id="export-list">Export list ↗</button></div>
+        <div id="my-medicines-list" class="medicine-list"></div>
+        <div id="list-empty" class="empty-state small-empty"><div class="empty-illustration"><span>▤</span></div><h2>Your list is ready when you are</h2><p>Save a medicine from its comparison result, or add one manually to track its costs.</p><button class="btn btn-outline" id="empty-add">＋ Add medicine</button></div>
+        <div class="disclaimer"><span class="disclaimer-symbol">ⓘ</span><p>Use this list for personal organisation only. Follow your prescription and never change dose, timing or medicine without professional advice.</p></div>
+      </section>
+
+      <section class="page" id="page-kendra">
+        <div class="page-title"><div class="eyebrow"><span class="eyebrow-line"></span> LOCAL ACCESS</div><h1>Find a <span>Jan Aushadhi Kendra.</span></h1><p class="lead">Find a store to contact about availability. A listing does not guarantee current stock.</p></div>
+        <div class="search-panel kendra-search-panel"><form id="kendra-form" class="search-form"><label class="sr-only" for="kendra-location">City or PIN code</label><div class="search-input-wrap"><span class="input-search-icon">⌖</span><input id="kendra-location" placeholder="Enter city or 6-digit PIN code" required><button type="button" class="clear-input" id="clear-kendra" aria-label="Clear location">×</button></div><button class="btn btn-primary" type="submit">Find stores <span>→</span></button></form><div class="search-foot"><span>ⓘ</span> Confirm the address and medicine stock by phone before travelling.</div></div>
+        <div class="kendra-options"><div class="option-card"><span class="action-icon teal">⌖</span><div><strong>Search a location</strong><p>Use your city or PIN code to look for listed Kendras.</p></div></div><div class="option-card"><span class="action-icon blue">↗</span><div><strong>Open official locator</strong><p>Use the official Jan Aushadhi website for the latest store details.</p><a href="https://janaushadhi.gov.in/" target="_blank" rel="noopener noreferrer" class="text-link">Visit official website ↗</a></div></div></div>
+        <div id="kendra-results" class="kendra-results"></div>
+        <div class="disclaimer"><span class="disclaimer-symbol">ⓘ</span><p>Store location and inventory may change. Call the Kendra to verify opening hours, stock and price before visiting.</p></div>
+      </section>
+
+      <section class="page" id="page-safety">
+        <div class="page-title"><div class="eyebrow"><span class="eyebrow-line"></span> OUR PROMISE</div><h1>Safety is <span>not optional.</span></h1><p class="lead">MedSetu helps you ask better questions. It does not make treatment decisions for you.</p></div>
+        <div class="safety-hero"><div class="safety-hero-mark">✚</div><div><span class="tag">PLEASE READ</span><h2>Never switch a prescribed medicine based on price alone.</h2><p>Only a doctor or qualified pharmacist who understands your prescription and health context can confirm whether a change is appropriate.</p></div></div>
+        <div class="safety-grid"><article class="safety-detail"><span class="detail-number">01</span><h3>Ingredients matter</h3><p>Brand names that sound alike can contain different ingredients. Exact composition and salt form must be checked.</p></article><article class="safety-detail"><span class="detail-number">02</span><h3>Strength and form matter</h3><p>Tablet, capsule, liquid, release type and dose are not automatically interchangeable—even when names look similar.</p></article><article class="safety-detail"><span class="detail-number">03</span><h3>Some medicines need extra care</h3><p>For medicines where consistency or close monitoring is important, ask your prescriber before any brand change.</p></article><article class="safety-detail"><span class="detail-number">04</span><h3>Uncertainty is a valid result</h3><p>If details are missing, conflicting or low-confidence, the correct next step is to pause and ask a professional.</p></article></div>
+        <div class="verdict-guide"><h2>How to read a result</h2><div class="verdict-row"><span class="verdict-badge verdict-green">Potential match</span><p>Information appears aligned in the available dataset. This is not permission to switch; verify with a professional.</p></div><div class="verdict-row"><span class="verdict-badge verdict-amber">Ask a professional</span><p>More context or professional judgement is needed. Do not change anything until confirmed.</p></div><div class="verdict-row"><span class="verdict-badge verdict-red">Do not switch</span><p>The available information flags a mismatch or concern. Do not use the suggested item as a replacement.</p></div><div class="verdict-row"><span class="verdict-badge verdict-grey">Not enough data</span><p>The app cannot reliably establish a match. Use the prescription and ask a doctor or pharmacist.</p></div></div>
+        <div class="disclaimer prominent-disclaimer"><span class="disclaimer-symbol">ⓘ</span><p><strong>Emergency:</strong> If you think you are having a severe allergic reaction or another medical emergency, seek urgent medical care. Do not rely on MedSetu for emergency decisions.</p></div>
+      </section>
+      <footer class="app-footer"><span>© MedSetu · Innovation & Design Thinking Project</span><span>Built to inform, never to prescribe <span class="footer-heart">♥</span></span></footer>
+    </main>
+  </div>
+
+  <dialog id="medicine-dialog" class="modal">
+    <form method="dialog" class="modal-head"><div><span class="tag">PERSONAL LIST</span><h2 id="dialog-title">Add a medicine</h2></div><button class="icon-button" aria-label="Close dialog">×</button></form>
+    <form id="medicine-editor" class="modal-body">
+      <label>Medicine name<input id="edit-name" required placeholder="e.g. Paracetamol 650 mg"></label>
+      <label>Composition (optional)<input id="edit-composition" placeholder="Active ingredient and strength"></label>
+      <div class="form-two"><label>Current price (₹)<input id="edit-current-price" type="number" min="0" step="0.01" placeholder="0"></label><label>Compared price (₹)<input id="edit-alt-price" type="number" min="0" step="0.01" placeholder="0"></label></div>
+      <label>Notes (optional)<textarea id="edit-notes" rows="2" placeholder="e.g. Check stock with pharmacist"></textarea></label>
+      <p class="form-hint">Prices are user-entered estimates. This list does not tell you to change medicines.</p>
+      <div class="modal-actions"><button type="button" class="btn btn-outline" id="cancel-editor">Cancel</button><button type="submit" class="btn btn-primary">Save medicine</button></div>
+    </form>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="static/app.js" defer></script>
+</body>
+</html>

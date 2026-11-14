@@ -1,0 +1,26 @@
+MedSetu demo medicine catalogue
+================================
+
+This file contains 40 illustrative catalogue rows (20 composition/form match groups)
+for software demonstration and testing only.
+
+IMPORTANT:
+- Every price is fabricated as a demo value in INR. It is NOT a current retail price,
+  MRP, Jan Aushadhi price, or price quote.
+- Manufacturer names are placeholders ("Demo Pharma A/B"), not real manufacturers.
+- These rows are not a verified national medicine catalogue.
+- demo_match_group is a technical grouping for demonstrating search/comparison only.
+  It does NOT establish that a medicine is clinically interchangeable or suitable.
+- Never use this file to prescribe, recommend, purchase, or substitute medicines.
+  A registered doctor/pharmacist must verify the actual product, composition,
+  strength, dosage form, release type, route, excipients, patient-specific factors,
+  and current product label.
+- Some entries deliberately say "verify label" because the exact marketed formulation
+  can vary. Do not treat those as verified product specifications.
+
+Columns:
+medicine_id, display_name, generic_name, composition, strength, dosage_form,
+route, manufacturer, demo_price_inr, demo_match_group, data_status
+
+For a college demo, display a clear banner:
+"DEMO DATA — prices and manufacturer records are illustrative, not verified."

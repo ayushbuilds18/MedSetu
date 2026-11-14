@@ -1,0 +1,41 @@
+﻿medicine_id,display_name,generic_name,composition,strength,dosage_form,route,manufacturer,demo_price_inr,demo_match_group,data_status
+MED001,Paracetamol 500 Demo A,Paracetamol,Paracetamol 500 mg,500 mg,Tablet,Oral,Demo Pharma A,10,PARA500,DEMO_ONLY
+MED002,Paracetamol 500 Demo B,Paracetamol,Paracetamol 500 mg,500 mg,Tablet,Oral,Demo Pharma B,12,PARA500,DEMO_ONLY
+MED003,Paracetamol 650 Demo A,Paracetamol,Paracetamol 650 mg,650 mg,Tablet,Oral,Demo Pharma A,18,PARA650,DEMO_ONLY
+MED004,Paracetamol 650 Demo B,Paracetamol,Paracetamol 650 mg,650 mg,Tablet,Oral,Demo Pharma B,20,PARA650,DEMO_ONLY
+MED005,Cetirizine 10 Demo A,Cetirizine,Cetirizine 10 mg,10 mg,Tablet,Oral,Demo Pharma A,8,CET10,DEMO_ONLY
+MED006,Cetirizine 10 Demo B,Cetirizine,Cetirizine 10 mg,10 mg,Tablet,Oral,Demo Pharma B,9,CET10,DEMO_ONLY
+MED007,ORS Sachet Demo A,Oral rehydration salts,Glucose + electrolytes (ORS),Standard ORS formulation,Powder sachet,Oral after reconstitution,Demo Pharma A,22,ORS,DEMO_ONLY
+MED008,ORS Sachet Demo B,Oral rehydration salts,Glucose + electrolytes (ORS),Standard ORS formulation,Powder sachet,Oral after reconstitution,Demo Pharma B,25,ORS,DEMO_ONLY
+MED009,Antacid Suspension Demo A,Aluminium hydroxide + magnesium hydroxide,Aluminium hydroxide + magnesium hydroxide,Demo formulation; verify label,Oral suspension,Oral,Demo Pharma A,65,ANTACID_SUSP,DEMO_ONLY
+MED010,Antacid Suspension Demo B,Aluminium hydroxide + magnesium hydroxide,Aluminium hydroxide + magnesium hydroxide,Demo formulation; verify label,Oral suspension,Oral,Demo Pharma B,72,ANTACID_SUSP,DEMO_ONLY
+MED011,Ibuprofen 200 Demo A,Ibuprofen,Ibuprofen 200 mg,200 mg,Tablet,Oral,Demo Pharma A,16,IBU200,DEMO_ONLY
+MED012,Ibuprofen 200 Demo B,Ibuprofen,Ibuprofen 200 mg,200 mg,Tablet,Oral,Demo Pharma B,19,IBU200,DEMO_ONLY
+MED013,Amlodipine 5 Demo A,Amlodipine,Amlodipine 5 mg,5 mg,Tablet,Oral,Demo Pharma A,14,AMLO5,DEMO_ONLY
+MED014,Amlodipine 5 Demo B,Amlodipine,Amlodipine 5 mg,5 mg,Tablet,Oral,Demo Pharma B,17,AMLO5,DEMO_ONLY
+MED015,Metformin 500 Demo A,Metformin,Metformin 500 mg,500 mg,Tablet,Oral,Demo Pharma A,24,MET500_IR,DEMO_ONLY
+MED016,Metformin 500 Demo B,Metformin,Metformin 500 mg,500 mg,Tablet,Oral,Demo Pharma B,27,MET500_IR,DEMO_ONLY
+MED017,Atorvastatin 10 Demo A,Atorvastatin,Atorvastatin 10 mg,10 mg,Tablet,Oral,Demo Pharma A,32,ATOR10,DEMO_ONLY
+MED018,Atorvastatin 10 Demo B,Atorvastatin,Atorvastatin 10 mg,10 mg,Tablet,Oral,Demo Pharma B,36,ATOR10,DEMO_ONLY
+MED019,Pantoprazole 40 Demo A,Pantoprazole,Pantoprazole 40 mg,40 mg,Gastro-resistant tablet,Oral,Demo Pharma A,28,PANTO40_GR,DEMO_ONLY
+MED020,Pantoprazole 40 Demo B,Pantoprazole,Pantoprazole 40 mg,40 mg,Gastro-resistant tablet,Oral,Demo Pharma B,31,PANTO40_GR,DEMO_ONLY
+MED021,Azithromycin 500 Demo A,Azithromycin,Azithromycin 500 mg,500 mg,Tablet,Oral,Demo Pharma A,58,AZI500,DEMO_ONLY
+MED022,Azithromycin 500 Demo B,Azithromycin,Azithromycin 500 mg,500 mg,Tablet,Oral,Demo Pharma B,64,AZI500,DEMO_ONLY
+MED023,Amoxicillin 500 Demo A,Amoxicillin,Amoxicillin 500 mg,500 mg,Capsule,Oral,Demo Pharma A,42,AMOX500_CAP,DEMO_ONLY
+MED024,Amoxicillin 500 Demo B,Amoxicillin,Amoxicillin 500 mg,500 mg,Capsule,Oral,Demo Pharma B,47,AMOX500_CAP,DEMO_ONLY
+MED025,Vitamin C 500 Demo A,Ascorbic acid,Ascorbic acid 500 mg,500 mg,Tablet,Oral,Demo Pharma A,20,VITC500,DEMO_ONLY
+MED026,Vitamin C 500 Demo B,Ascorbic acid,Ascorbic acid 500 mg,500 mg,Tablet,Oral,Demo Pharma B,23,VITC500,DEMO_ONLY
+MED027,Folic Acid 5 Demo A,Folic acid,Folic acid 5 mg,5 mg,Tablet,Oral,Demo Pharma A,11,FOLIC5,DEMO_ONLY
+MED028,Folic Acid 5 Demo B,Folic acid,Folic acid 5 mg,5 mg,Tablet,Oral,Demo Pharma B,13,FOLIC5,DEMO_ONLY
+MED029,Loratadine 10 Demo A,Loratadine,Loratadine 10 mg,10 mg,Tablet,Oral,Demo Pharma A,15,LORA10,DEMO_ONLY
+MED030,Loratadine 10 Demo B,Loratadine,Loratadine 10 mg,10 mg,Tablet,Oral,Demo Pharma B,18,LORA10,DEMO_ONLY
+MED031,Diclofenac 50 Demo A,Diclofenac,Diclofenac 50 mg,50 mg,Tablet,Oral,Demo Pharma A,21,DICLO50,DEMO_ONLY
+MED032,Diclofenac 50 Demo B,Diclofenac,Diclofenac 50 mg,50 mg,Tablet,Oral,Demo Pharma B,25,DICLO50,DEMO_ONLY
+MED033,Levocetirizine 5 Demo A,Levocetirizine,Levocetirizine 5 mg,5 mg,Tablet,Oral,Demo Pharma A,17,LEVO5,DEMO_ONLY
+MED034,Levocetirizine 5 Demo B,Levocetirizine,Levocetirizine 5 mg,5 mg,Tablet,Oral,Demo Pharma B,20,LEVO5,DEMO_ONLY
+MED035,Omeprazole 20 Demo A,Omeprazole,Omeprazole 20 mg,20 mg,Delayed-release capsule,Oral,Demo Pharma A,19,OMEP20_DR,DEMO_ONLY
+MED036,Omeprazole 20 Demo B,Omeprazole,Omeprazole 20 mg,20 mg,Delayed-release capsule,Oral,Demo Pharma B,22,OMEP20_DR,DEMO_ONLY
+MED037,Salbutamol Inhaler Demo A,Salbutamol,Salbutamol inhalation,Verify delivered dose on label,Metered-dose inhaler,Inhalation,Demo Pharma A,110,SALB_INH,DEMO_ONLY
+MED038,Salbutamol Inhaler Demo B,Salbutamol,Salbutamol inhalation,Verify delivered dose on label,Metered-dose inhaler,Inhalation,Demo Pharma B,125,SALB_INH,DEMO_ONLY
+MED039,Insulin Human Demo A,Human insulin,Human insulin,"Verify type, concentration and device",Injection,Subcutaneous,Demo Pharma A,250,INSULIN_HUMAN,DEMO_ONLY
+MED040,Insulin Human Demo B,Human insulin,Human insulin,"Verify type, concentration and device",Injection,Subcutaneous,Demo Pharma B,275,INSULIN_HUMAN,DEMO_ONLY

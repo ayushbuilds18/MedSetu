@@ -1,0 +1,14 @@
+OPEN MEDSETU ON YOUR PHONE
+
+Recommended: deploy the project to Render, then open its HTTPS link in Chrome.
+1. Upload this folder's contents to GitHub.
+2. In Render choose New -> Blueprint and connect the repository.
+3. Deploy the medsetu service from render.yaml.
+4. Open the generated HTTPS URL on your phone.
+5. Chrome menu (three dots) -> Add to Home screen / Install app.
+
+For a temporary same-Wi-Fi test, run on your PC:
+uvicorn app.main:app --host 0.0.0.0 --port 8000
+Then open http://YOUR-PC-IP:8000 on your phone. Both devices must use the same Wi-Fi.
+
+Safety: all bundled medicine and Kendra entries are illustrative demo data. MedSetu informs; it never prescribes.

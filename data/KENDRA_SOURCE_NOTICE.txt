@@ -1,0 +1,7 @@
+Kendra source file: kendra_9_10_2026 @ 16_14_16.pdf
+
+The supplied one-page PDF contains only the heading "List of Kendra". It contains no Kendra names, addresses, PIN codes, phone numbers, or other listing data.
+
+Accordingly, no Kendra records have been imported and no locations have been fabricated. The Kendra locator will return zero verified local results until genuine records are added through the admin dashboard or imported into kendra_source_import.csv.
+
+The CSV is an empty import template. Only mark records verified after checking them against a trustworthy source.
